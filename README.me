@@ -1,0 +1,23 @@
+# Micro-serviço com Node.js
+
+    - Utilizando Kafka;
+    - Utilizando Node;
+
+## Aplicações
+
+    - API principal - (Station);
+    - Geração de certificado;
+
+## Fluxo
+
+    - API principal envia uma mensagem para o serviço de certificado para gerar o certificado;
+    - O Micro-serviço do certificado devolve uma resposta (sincrona / assincrona);
+
+    Se conseguir ter sincrona/assincrona:
+
+    - Receber uma resposta assincrona de quando o e-mail com certificado foi enviado;
+
+## O que sabemos?
+
+    - REST (latencia);
+    - Redis / RabbitMQ / **Kafka**;
